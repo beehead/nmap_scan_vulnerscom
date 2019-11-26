@@ -1,3 +1,3 @@
 # nmap_scan_vulnerscom
-## install nmap, download vulners script, scans and sends result on email
-### plan to make on bash
+## plan to make on bash
+install nmap, download vulners script, scans and sends result on email
