@@ -7,10 +7,10 @@
 git clone https://github.com/vulnersCom/nmap-vulners /usr/share/nmap/scripts/vulners && nmap --script-updatedb
 
 # run scan. To check keys
-nmap -sV -oX ./xml_files.xml -oN - -v1 $@ --script=vulners/vulners.nse -iL ./scan.ips
+nmap -sV -oX ./xml_files/output.xml -oN - -v1 $@ --script=vulners/vulners.nse -iL ./scan.ips
 
 # pack results
-tar -czf xml_files.tar.gz xml_files.xml
+tar -czf xml_files.tar.gz ./xml_files/
 
 # send email with results
 echo "See results in attachment" | mutt -s "Scan results" -a xml_files.tar.gz user@example.com
