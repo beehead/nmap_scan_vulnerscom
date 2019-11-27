@@ -13,4 +13,4 @@ nmap -sV -oX ./xml_files/output.xml -oN - -v1 $@ --script=vulners/vulners.nse -i
 tar -czf xml_files.tar.gz ./xml_files/
 
 # send email with results
-echo "See results in attachment" | mutt -s "Scan results" -a xml_files.tar.gz user@example.com
+echo "See results in attachment" | mutt -s "Scan results" -a xml_files.tar.gz -- user@example.com
