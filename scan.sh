@@ -9,7 +9,7 @@ git clone https://github.com/vulnersCom/nmap-vulners /usr/share/nmap/scripts/vul
 nmap -sV -oX ./xml_files -oN - -v1 $@ --script=vulners/vulners.nse -iL ./scan.ips
 
 # pack results
-tar -cfz xml_files.tar.gz ./xml_files
+tar -czf xml_files.tar.gz xml_files
 
 # send email with results
 echo "See results in attachment" | mail -s "Scan results" -A xml_files.tar.gz user@example.com
