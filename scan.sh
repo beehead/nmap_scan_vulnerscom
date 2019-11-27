@@ -1,7 +1,7 @@
 #/bin/bash
+# script runs nmap with vulnerscom script generates and sends xml and html reports on email, inspired by Flan scan
 # needed packages tar, git, nmap, mailutils, xsltproc
 # needed list of IP addresses to scan in file scan.ips
-# script runs nmap with vulnerscom script and send results on email. Inspired by Flan scan
 # tested on Debian 9
 # define current time and output filename
 current_time=$(date "+%Y.%m.%d-%H.%M")
