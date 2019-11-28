@@ -11,7 +11,7 @@ filename_html=xml_files/$current_time.html
 # download script. To check repo
 git clone https://github.com/vulnersCom/nmap-vulners /usr/share/nmap/scripts/vulners && nmap --script-updatedb
 
-# run scan. Remove -Pn if all online hosts icmp available 
+# run scan. Remove -Pn if all online hosts available by icmp
 nmap -Pn -sV -oX $filename -oN - -v1 $@ --script=vulners/vulners.nse -iL ./scan.ips
 
 # convert to html
