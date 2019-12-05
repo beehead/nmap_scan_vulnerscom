@@ -3,6 +3,32 @@
 # needed packages tar, git, nmap, mailutils, xsltproc
 # needed list of IP addresses to scan in file scan.ips
 # tested on Debian 9
+# check and install packages when needed
+if [ $(dpkg-query -W -f='${Status}' tar 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get install tar;
+fi
+
+if [ $(dpkg-query -W -f='${Status}' git 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get install git;
+fi
+
+if [ $(dpkg-query -W -f='${Status}' nmap 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get install nmap;
+fi
+
+if [ $(dpkg-query -W -f='${Status}' mailutils 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get install mailutils;
+fi
+
+if [ $(dpkg-query -W -f='${Status}' xsltproc 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get install xsltproc;
+fi
+
 # define current time and output filename
 current_time=$(date "+%Y.%m.%d-%H.%M")
 filename=xml_files/$current_time.xml
