@@ -24,8 +24,8 @@ Automated network vulnerability scanning script using nmap and vulners NSE scrip
 ## Installation
 
 ```bash
-git clone https://github.com/your-repo/nmap-vulners-scan.git
-cd nmap-vulners-scan
+git clone [https://github.com/beehead/nmap_scan_vulnerscom.git](https://github.com/beehead/nmap_scan_vulnerscom.git)
+cd nmap_scan_vulnerscom
 ```
 
 ## Configuration
