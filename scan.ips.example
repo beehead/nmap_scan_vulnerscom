@@ -1,0 +1,21 @@
+# scan.ips - Example IP addresses file
+# Format: One IP address or CIDR range per line
+# Remove the # comments before using
+
+# Example single IPs:
+# 192.168.1.1
+# 192.168.1.10
+# 10.0.0.1
+
+# Example CIDR ranges:
+# 192.168.1.0/24
+# 10.0.0.0/16
+
+# Example hostnames:
+# example.com
+# test.example.org
+
+# IMPORTANT: Replace these examples with your actual target IPs
+# Only scan networks you own or have explicit permission to scan
+
+127.0.0.1
